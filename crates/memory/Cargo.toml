@@ -1,0 +1,12 @@
+[package]
+name = "memory"
+version = "0.1.0"
+edition = "2021"
+
+[features]
+default = ["arc"]
+arc = ["dep:parking_lot"]
+rc = []
+
+[dependencies]
+parking_lot = { version = "0.12.3", optional = true }

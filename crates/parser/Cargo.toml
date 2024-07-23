@@ -1,0 +1,14 @@
+[package]
+name = "parser"
+version = "0.1.0"
+edition = "2021"
+
+[dependencies]
+shared = { path = "../shared" }
+lexer = { path = "../lexer" }
+memory = { path = "../memory"}
+thiserror = { workspace = true }
+unicode-segmentation = { workspace = true }
+smallvec = { workspace = true }
+derive-name = { workspace = true }
+ariadne = { workspace = true }

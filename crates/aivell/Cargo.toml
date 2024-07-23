@@ -1,0 +1,17 @@
+[package]
+name = "aivell"
+version = "0.1.0"
+edition = "2021"
+
+[features]
+default = ["arc"]
+arc = ["runtime/arc"]
+rc = ["runtime/rc"]
+
+[dependencies]
+bytecode = { path = "../bytecode", default-features = false }
+parser = { path = "../parser", default-features = false }
+runtime = { path = "../runtime", default-features = false }
+
+dunce = { workspace = true }
+thiserror = { workspace = true }

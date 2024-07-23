@@ -1,0 +1,9 @@
+[package]
+name = "lexer"
+version = "0.1.0"
+edition = "2021"
+
+[dependencies]
+nom = { workspace = true }
+nom_locate = { workspace = true }
+shared = { path = "../shared"}

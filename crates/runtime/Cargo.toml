@@ -1,0 +1,25 @@
+[package]
+name = "runtime"
+version = "0.1.0"
+edition = "2021"
+
+[features]
+default = ["arc"]
+arc = ["memory/arc"]
+rc = ["memory/rc"]
+
+[dependencies]
+bytecode = { path = "../bytecode", default-features = false }
+deriver = { path = "../deriver" }
+lexer = { path = "../lexer" }
+memory = { path = "../memory", default-features = false }
+parser = { path = "../parser", default-features = false }
+indexmap = { workspace = true }
+smallvec = { workspace = true }
+rustc-hash = { workspace = true }
+thiserror = { workspace = true }
+downcast-rs = { workspace = true }
+unicode-segmentation = { workspace = true }
+instant = { workspace = true }
+chrono = { workspace = true }
+tokio ={ workspace = true }

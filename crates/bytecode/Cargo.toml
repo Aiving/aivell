@@ -1,0 +1,14 @@
+[package]
+name = "bytecode"
+version = "0.1.0"
+edition = "2021"
+
+[dependencies]
+shared = { path = "../shared" }
+memory = { path = "../memory" }
+parser = { path = "../parser" }
+smallvec = { workspace = true }
+thiserror = { workspace = true }
+derive-name = { workspace = true }
+rustc-hash = { workspace = true }
+dunce = { workspace = true }
